@@ -1,0 +1,28 @@
+#!/usr/bin/env python   #设置Python解释器，告诉系统这是一个python程序
+# -*- coding: UTF-8 -*-   #声明文件编码为utf-8；代码文件存储时一定要将文件编码设为与开头的文件编码声明一致的编码
+
+  Cat: &animal1
+    name:
+      cat
+    color:
+      white
+    age:
+      2
+    gender:
+      F
+    hair:
+      '短毛'
+  Dog: &animal2
+    name:
+      dog
+    color:
+      black
+    age:
+      3
+    gender:
+      M
+    hair:
+      '长毛'
+
+  default:
+    <<: *animal2
